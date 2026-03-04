@@ -1,0 +1,168 @@
+*{margin:0;padding:0;}
+
+@font-face{font-family: M-M;src: url(../fonts/Montserrat-Medium.ttf);}
+@font-face{font-family: M-L;src: url(../fonts/Montserrat-Light.ttf);}
+@font-face{font-family: M-R;src: url(../fonts/Montserrat-Regular.ttf);}
+@font-face{font-family: M-EL;src: url(../fonts/Montserrat-ExtraLight.ttf);}
+@font-face{font-family: M-SB;src: url(../fonts/Montserrat-SemiBold.ttf);}
+@font-face{font-family: M-EB;src: url(../fonts/Montserrat-ExtraBold.ttf);}
+@font-face{font-family: M-B;src: url(../fonts/Montserrat-Bold.ttf);}
+
+html, body {height: 100%;}
+body, .wrapper {min-height: 100vh;display: flex;flex-direction: column;}
+
+
+.header{display: flex;justify-content: space-between; align-items: center; height: 40px; background-color: #ffffff;width: 100%;}
+    .header_1{display: flex; align-items: center;}
+        .backet{margin-right: 20px; margin-left: 20px;}
+        .favourites{margin-right: 20px;}
+        .feedback{text-decoration: none;color: black;font-size: 15px;font-family: M-SB;}
+    .header_logo{margin-right: 145px; display: flex; justify-content: center; margin-left: 40px;}    
+    .header_2{display: flex; align-items: center;}
+        .vk{margin-left: 10px;margin-right: 20px;}
+        .link_admin{color: #250E50; font-size: 24px; font-family: M-B; text-decoration: none;}
+        .header_auth_link{margin-left: 20px;}
+
+
+
+.container{ margin: 0 auto; width: 1120px; height: auto;margin-top: 3%;flex: 1 0 auto;}
+    .blok{width: 60%; height: 800px; background-color: #A184F3; margin: auto; border-radius: 30px;box-shadow: 10px 10px rgba(15, 5, 31, 0.7);}
+    .text{color: #ffffff; font-size: 40px; font-family: M-EB; display: flex; justify-content: center; padding-top: 7%}
+    .text2,.text1{color: #ffffff; font-size: 24px; font-family: M-L; padding-left: 15%;}
+    .text1{margin-top: 15%;}
+    .text2{margin-top: 5%}
+    .input,.input2{width: 70%;height: 40px; color: black; font-size: 27px; display: block; margin: 0 auto;font-family: M-M;}
+    .input2{height: 200px;}
+    .btn{width: 45%;height:35px; margin: 0 auto; font-size: 20px; font-family: M-B; border-radius: 10px; border: none; background-color: #ffffff; margin-top: 20%;display: flex;align-items: center; justify-content: center; margin-bottom: 10%;}
+
+.footer{background-color: #250E50; display: flex; flex-direction: column; flex-shrink: 0; margin-top: 200px;}
+    .footer_blok1{display: flex; width: 1120px; margin: 0 auto;justify-content: space-between; height: 170px;}
+        .footer_blok{width: 125px;}
+            .footer_text1{font-size: 15px; color:#F2ECFA; font-family: M-B; padding-top: 32px;}
+            .footer_text2{text-decoration: none;color:#F2ECFA;font-size: 10px;font-family: M-L;margin-top: 16px; }
+            .footer_text22{text-decoration: none;color:#F2ECFA;font-size: 10px;font-family: M-L;}
+    .footer_blok2{background-color: #250E50; height: 40px;display: flex; align-items: center; justify-content: center;}
+        .footer_blok2_text{color: #ffffff; font-size: 10px; font-family: M-B;}
+
+
+ 
+/* --- Адаптив для планшетов и мобильных устройств --- */
+
+@media screen and ((max-width: 1100px) and (min-width: 800px)) {
+    .header{position: fixed; z-index: 3; height: auto; align-items: center;}
+    .backet{margin-right: 10px; margin-left: 10px; width: 20px;}
+    .favourites{margin-right: 10px;width: 20px;}
+    .feedback{font-size: 10px;  margin-right: 10px; }
+    .header_auth{width: 20px; margin-left: 0px;}
+    .header_auth_link{margin-left: 0px;}
+    .header_logo{margin-right: 10px;  margin-left: 10px;}
+    .header_logo_img{width: 60px;}
+    .vk{margin-left: 10px;margin-right: 10px; width: 20px;}
+    .tg{width: 20px; margin-left: 0px;padding-top: 2px;}
+    .link_admin{font-size: 10px; margin-right: 5px;}
+    
+    .container{width: 90%;margin: 0 auto; padding-top: 20%;}
+    .blok{width: 80%; height: auto;padding-bottom: 50px;}
+    .text{ font-size: 35px;}
+    .text2,.text1{ font-size: 24px;}
+    .input,.input2{width: 70%;height: 40px;  font-size: 27px; }
+    .input2{height: 300px;}
+    .btn{width: 45%;height:35px; margin: 0 auto; font-size: 20px; margin-top: 20%;}
+
+    .footer_blok1 { width:96%; margin-bottom: 10px; margin-left: 4%;}
+    .footer_text1{font-size: 12px; padding-top: 20px; }
+    .footer_text2{font-size: 8px;}
+    .footer_tg{width: 30px;}
+    .footer_vk{width: 30px;}
+}
+
+@media screen and ((max-width: 800px) and (min-width: 600px)) {
+    .header{position: fixed; z-index: 3; height: auto; align-items: center;}
+    .backet{margin-right: 10px; margin-left: 10px; width: 20px;}
+    .favourites{margin-right: 10px;width: 20px;}
+    .feedback{font-size: 10px;  margin-right: 10px; }
+    .header_auth{width: 20px; margin-left: 0px;}
+    .header_auth_link{margin-left: 0px;}
+    .header_logo{margin-right: 10px;  margin-left: 10px;}
+    .header_logo_img{width: 60px;}
+    .vk{margin-left: 10px;margin-right: 10px; width: 20px;}
+    .tg{width: 20px; margin-left: 0px;padding-top: 2px;}
+    .link_admin{font-size: 10px; margin-right: 5px;}
+    
+    .container{width: 90%;margin: 0 auto; padding-top: 20%;}
+    .blok{width: 80%; }
+    .text{ font-size: 35px;}
+    .text2,.text1{ font-size: 24px;}
+    .input,.input2{width: 70%;height: 40px;  font-size: 27px; }
+    .input2{height: 300px;}
+    .btn{width: 45%;height:35px; margin: 0 auto; font-size: 20px; margin-top: 20%;}
+
+
+    .footer_blok1 { width:96%; margin-bottom: 10px; margin-left: 4%;}
+    .footer_text1{font-size: 12px; padding-top: 20px; }
+    .footer_text2{font-size: 8px;}
+    .footer_tg{width: 30px;}
+    .footer_vk{width: 30px;}
+}
+
+
+@media screen and ((max-width: 600px) and (min-width: 400px)) {
+    .header{position: fixed; z-index: 3; height: auto; align-items: center;}
+    .backet{margin-right: 10px; margin-left: 10px; width: 13px;}
+    .favourites{margin-right: 10px;width: 13px;}
+    .feedback{font-size: 8px;  margin-right: 10px; }
+    .header_auth{width: 13px; margin-left: 0px;}
+    .header_auth_link{margin-left: 0px;}
+    .header_logo{margin-right: 10px;  margin-left: 10px;}
+    .header_logo_img{width: 60px;}
+    .vk{margin-left: 10px;margin-right: 10px; width: 13px;}
+    .tg{width: 13px; margin-left: 0px;padding-top: 2px;}
+    .link_admin{font-size: 10px; margin-right: 5px;}
+
+    .container{width: 90%;margin: 0 auto; padding-top: 20%;}
+    .blok{width: 80%; height: 700px;}
+    .text{ font-size: 28px;}
+    .text2,.text1{ font-size: 20px;}
+    .input,.input2{width: 70%;height: 30px;  font-size: 20px; }
+    .input2{height: 300px;}
+    .btn{width: 60%;height:35px; margin: 0 auto; font-size: 16px; margin-top: 20%;}
+    
+    .footer_blok1 { width:96%; margin-bottom: 10px; margin-left: 4%;}
+    .footer_blok{width: 80px; }
+    .footer_text1{font-size: 9px;  padding-top: 20px;}
+    .footer_text2{font-size: 7px;}
+    .footer_tg{width: 20px;}
+    .footer_vk{width: 20px;}
+    .footer_blok2_text{font-size: 8px;}
+}
+
+@media screen and ((max-width: 400px) and (min-width: 300px)) {
+    .header{position: fixed; z-index: 3; height: auto;}
+    .backet{margin-right: 10px; margin-left: 10px; width: 20px;}
+    .favourites{margin-right: 10px;width: 20px;}
+    .feedback{font-size: 12px; margin-right: 10px;}
+    .header_auth{width: 20px; margin-left: 0px;}
+    .header_auth_link{margin-left: 0px;}
+    .header_logo{margin-right: 10px;  margin-left: 10px;}
+    .header_logo_img{width: 60px;}
+    .vk{margin-left: 10px;margin-right: 10px; width: 15px;}
+    .tg{width: 15px; margin-left: 0px;}
+    .link_admin{font-size: 10px; margin-right: 5px; padding-bottom: 2px;}
+
+    .container{width: 90%;margin: 0 auto; padding-top: 20%;}
+    .blok{width: 80%; height: 600px;}
+    .text{ font-size: 20px;}
+    .text2,.text1{ font-size: 15px;}
+    .input,.input2{width: 70%;height: 25px;  font-size: 15px; }
+    .input2{height: 300px;}
+    .btn{width: 60%;height:35px; margin: 0 auto; font-size: 12px; margin-top: 20%;}
+
+    .footer_blok1 { width:96%;  margin-left: 4%; margin-bottom: -40px;}
+    .footer_blok{width: 80px; }
+    .footer_text1{font-size: 8px; padding-top: 20px;}
+    .footer_text2{font-size: 5px;}
+    .footer_tg{width: 15px;}
+    .footer_vk{width: 15px;}
+    .footer_blok2_text{font-size: 5px;}
+}
+
